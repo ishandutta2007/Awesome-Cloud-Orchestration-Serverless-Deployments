@@ -1,52 +1,64 @@
-# Awesome-Cloud-Orchestration-Serverless-Deployments
+<div align="center">
 
-<FollowUp>
-Would you like to **add a dedicated section for open-source GitOps & service mesh tools** (like `Argo CD`, `Flux`, `Istio`, `Cilium`) or **generate the next `README.md` repository**?
-</FollowUp>
-# Awesome-Cloud-Orchestration-Serverless-Deployments
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+<a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments?style=flat-square&logo=github&color=gold" alt="GitHub stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments?style=flat-square&logo=github&color=blue" alt="GitHub forks" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0--1.0-green.style=flat-square" alt="License: CC0-1.0" /></a>
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
-# Awesome Cloud Orchestration & Serverless Deployments 🌟
+<br/><br/>
 
+<img src="./assets/banner.svg" alt="Awesome Cloud Orchestration &amp; Serverless Deployments Banner" width="100%" />
 
+# Awesome Cloud Orchestration & Serverless Deployments 🚀⚡
 
-> **Top Cloud Orchestration Serverless Deployments (Opensource)**  
+> **A curated, battle-tested index of open-source container schedulers, serverless FaaS frameworks, cloud-native runtimes, and developer PaaS deployments.**
 
-> A curated list of the best cloud orchestration, container scheduling, and serverless deployment platforms — with a strong focus on **open-source** and self-hostable alternatives.  
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments/pulls)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments/pulse)
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-orange.svg?style=flat-square)](https://github.com/ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments)
 
-> 🌟 **Star if you like it!** 🌟
+🌟 **Star this repository if you find it valuable!** 🌟
 
+</div>
 
+---
 
-Modern cloud orchestration and serverless platforms let teams deploy, scale, and manage containers and functions without managing every server. Commercial services such as AWS ECS, Google Cloud Run, Azure Container Apps, Fly.io, and Railway provide polished managed experiences, while a rich open-source ecosystem offers full control through Kubernetes, Nomad, Knative, OpenFaaS, and related projects.
+Modern cloud orchestration and serverless deployment architectures empower engineering teams to scale, automate, and orchestrate containers and event-driven functions globally with high availability and instant scale-to-zero capabilities. While hosted commercial hyperscalers like **AWS ECS/Fargate**, **Google Cloud Run**, and **Azure Container Apps** deliver fully managed workflows, a robust open-source ecosystem powered by **Kubernetes**, **K3s**, **Nomad**, **Knative**, **Coolify**, **OpenFaaS**, and **Argo CD** provides absolute infrastructure sovereignty, avoiding vendor lock-in.
 
+This guide provides an SEO-optimized, thoroughly categorized overview distinguishing commercial hosted SaaS platforms from community-driven open-source software, complete with enterprise pricing tiers, free quotas, and real-time GitHub popularity.
 
+---
 
-This list prioritizes **open-source GitHub projects and self-hostable tools** while keeping SaaS/hosted platforms clearly separated.
+## 📑 Table of Contents
 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS / Hosted Platforms](#-saas--hosted-platforms)
+- [🌐 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [☸️ Container Orchestration & Scheduling Engines](#️-container-orchestration--scheduling-engines)
+  - [⚡ Serverless FaaS & Autoscaling Platforms](#-serverless-faas--autoscaling-platforms)
+  - [🚀 Self-Hosted PaaS & Developer Deployment Platforms](#-self-hosted-paas--developer-deployment-platforms)
+  - [🔄 GitOps, Continuous Delivery & Workflow Orchestration](#-gitops-continuous-delivery--workflow-orchestration)
+- [💡 Architectural Guidance: How to Choose](#-architectural-guidance-how-to-choose)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer](#️-disclaimer)
 
+---
 
-## Table of Contents
+## 📊 Sector Overview & Market Dynamics
 
+The global cloud container orchestration market is valued between **$1.4B and $10B+** (growing at an ~18%–24% CAGR), while the serverless computing sector is valued at **$22B to $32B+** (accelerating toward $44B–$90B+ at a ~15%–23% CAGR). 
 
+The industry exhibits a **concentrated core** where the top three cloud hyperscalers (Amazon Web Services, Microsoft Azure, and Google Cloud Platform) capture over 65% of enterprise container and function spend. In parallel, a **moderately fragmented periphery** of high-growth independent PaaS solutions (such as Railway, Fly.io, and Scaleway) and open-source self-hostable tools (such as Coolify, Dokku, and K3s) provide tailored developer experiences, data sovereignty, and reduced cloud margins.
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
+---
 
-- [Open-Source GitHub Projects](#open-source-github-projects)
+## 🏢 SaaS / Hosted Platforms
 
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## Sector Overview & Market Dynamics
-
-The global cloud container orchestration market is valued between $1.4B and $10B+ (growing at ~18–24% CAGR), while the serverless computing sector accounts for $22B to $32B+ (growing at ~15–23% CAGR). The sector exhibits a **highly concentrated core** dominated by hyperscalers (AWS, Microsoft Azure, Google Cloud) that capture the majority of enterprise workload spend, alongside a **moderately fragmented periphery** of specialized PaaS providers, edge runtimes, and developer-centric deployment platforms catering to niche workflows.
-
-## SaaS / Hosted Platforms
-
-These are popular commercial or fully managed cloud orchestration and serverless platforms (closed-source / hosted), sorted descending by company size (valuation / revenue / market cap):
+Below is a breakdown of major commercial or fully managed cloud orchestration and serverless platforms (closed-source / hosted), sorted in **descending order by company size** (market capitalization / enterprise valuation):
 
 | Platform | Provider / Parent | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -61,146 +73,129 @@ These are popular commercial or fully managed cloud orchestration and serverless
 | **[Railway](https://railway.app/)** | Railway | ~$500M–$1B Valuation ($124M funding, ~2M users) | Hobby plan starting at **$5.00/month** (includes $5 of resource credits, then $20/vCPU-mo & $10/GB RAM-mo) | **Free Forever:** $1.00/mo recurring resource credit, 1 project with up to 3 services (up to 0.5 GB RAM, 1 vCPU, auto-sleep after idle) plus a 30-day initial trial with $5 credit. | Developer-centric PaaS providing instant git-based deployments, automated container builds, and database provisioning. |
 | **[Fly.io](https://fly.io/)** | Fly.io | ~$470M Valuation ($136M funding, ~$12M ARR) | Pay-as-you-go starting at ~$2.19/month for continuous `shared-cpu-1x` (256MB RAM) micro-machine; Hobby subscription at $5.00/month | **Pay-As-You-Go / Trial:** No permanent free VM plan for new accounts ($1 trial credit / pay-per-second); includes free perpetual 10 GB volume snapshots, 10 SSL certificates, and shared IPv4/IPv6. | Global application delivery platform running micro-VM containers directly on bare metal close to users. |
 
+---
 
+## 🌐 Open-Source GitHub Projects
 
-## Open-Source GitHub Projects
+Explore the top self-hostable and open-source container schedulers, serverless platforms, PaaS alternatives, and GitOps engines. **Each category is strictly sorted in descending order by GitHub star count**, with verified star badges linking directly to each repository's stargazers.
 
+### ☸️ Container Orchestration & Scheduling Engines
 
+- **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)** [![Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers)  
+  The industry-standard production container orchestrator. Automates declarative deployment, automated rollout/rollback, service discovery, load balancing, and storage orchestration at petabyte scale. (Apache-2.0)
 
-Open-source alternatives and self-hostable tools for container orchestration, serverless functions, and cloud-native deployments. These give you full control over the control plane and can run on any infrastructure.
+- **[moby/moby](https://github.com/moby/moby)** [![Stars](https://img.shields.io/github/stars/moby/moby?style=social&color=white)](https://github.com/moby/moby/stargazers)  
+  The open-source framework and upstream component collection for container systems, including Docker Engine and Docker Swarm for lightweight native clustering. (Apache-2.0)
 
+- **[k3s-io/k3s](https://github.com/k3s-io/k3s)** [![Stars](https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white)](https://github.com/k3s-io/k3s/stargazers)  
+  Highly available, certified lightweight Kubernetes distribution packed into a single `<100MB` binary. Optimized for edge, IoT, ARM devices, and resource-constrained environments. (Apache-2.0)
 
+- **[rancher/rancher](https://github.com/rancher/rancher)** [![Stars](https://img.shields.io/github/stars/rancher/rancher?style=social&color=white)](https://github.com/rancher/rancher/stargazers)  
+  Complete enterprise multi-cluster management control plane. Manages downstream clusters across AWS EKS, Google GKE, Azure AKS, and bare-metal RKE2 clusters under a single glass pane. (Apache-2.0)
 
-### Container Orchestration & Scheduling
-
-
-
-- **[kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)**  
-
-  The de-facto open-source standard for container orchestration. Automates deployment, scaling, and management of containerized applications. Massive ecosystem of operators, Helm charts, and CNCF projects. Apache-2.0.
-
-
-
-- **[hashicorp/nomad](https://github.com/hashicorp/nomad)**  
-
-  Flexible workload orchestrator that schedules containers, binaries, Java applications, and VMs. Simpler operational model than Kubernetes with a single binary. Supports multi-region and mixed workloads. (Note: license model changed; check current terms for your use case.)
-
-
-
-- **[k3s-io/k3s](https://github.com/k3s-io/k3s)**  
-
-  Lightweight, certified Kubernetes distribution optimized for edge, IoT, CI, and resource-constrained environments. Single binary, low resource usage, fully compatible with upstream Kubernetes.
-
-
-
-- **Docker Swarm** (built into Docker Engine)  
-
-  Simple native clustering and orchestration for Docker containers. Easy to adopt for teams already using Docker Compose.
-
-
-
-- **Rancher / RKE / RKE2** open-source components  
-
-  Multi-cluster Kubernetes management and lightweight Kubernetes distributions that remain largely open-source.
-
-
-
-### Serverless & Function Platforms
-
-
-
-- **[knative/serving](https://github.com/knative/serving)** (+ Knative Eventing)  
-
-  Kubernetes-based platform that adds serverless capabilities: request-driven containers, scale-to-zero, traffic splitting, and event-driven architecture. Widely used as the foundation for many managed serverless offerings.
-
-
-
-- **[openfaas/faas](https://github.com/openfaas/faas)** (OpenFaaS)  
-
-  Popular open-source serverless framework for deploying functions and microservices as containers. Supports Kubernetes, K3s, OpenShift, and standalone modes. Strong developer experience and community.
-
-
-
-- **[apache/openwhisk](https://github.com/apache/openwhisk)**  
-
-  Apache OpenWhisk — mature open-source serverless platform that executes functions in response to events. Supports multiple languages, triggers, rules, and sequences. Can run on Kubernetes or standalone.
-
-
-
-- **Fission, Nuclio, and related Kubernetes-native FaaS frameworks**  
-
-  Additional open-source serverless platforms that emphasize fast cold starts, language flexibility, and tight Kubernetes integration.
-
-
-
-### Deployment & Platform Tools
-
-
-
-- **[yuechen-li-dev/Aetheris](https://github.com/yuechen-li-dev/Aetheris)**  
-
-  Next-generation open-source geometric modeling kernel and engineering runtime (primarily CAD-focused). Included as referenced by the community; useful in specialized engineering and digital-twin deployment contexts.
-
-
-
-- **Kamal, Dokku, CapRover, and lightweight PaaS tools**  
-
-  Open-source “Heroku-like” platforms that simplify deploying applications on your own servers with minimal orchestration overhead.
-
-
-
-- **Argo CD, Argo Workflows, Flux, and GitOps toolchains**  
-
-  Open-source continuous delivery and workflow engines that complement orchestration platforms for declarative deployments.
-
-
-
-> **Tip**: For full control and portability start with **Kubernetes** (or **K3s** for lighter needs). For simpler mixed workloads consider **Nomad**. For serverless functions on Kubernetes use **Knative** or **OpenFaaS**. Many of these tools interoperate and can be combined (e.g., Knative on Kubernetes, OpenFaaS on K3s).
-
-
-
-## How to Contribute
-
-
-
-Contributions are welcome and encouraged!
-
-
-
-1. Fork the repository
-
-2. Add a new tool under the appropriate section (keep SaaS and Open-Source strictly separate)
-
-3. Use the same format: **Name** — short description + key features + license/link
-
-4. Prefer actively maintained projects with clear documentation, reproducible examples, and preferably cross-platform or multi-cloud support
-
-5. Submit a Pull Request
-
-
-
-Please keep descriptions neutral and factual. Open-source and self-hostable projects are the primary focus of this list. Note any license changes or enterprise editions clearly.
-
-
-
-## Disclaimer
-
-
-
-This is a community-curated list for informational and educational purposes only.  
-
-Inclusion does not constitute an endorsement. Always review licenses (especially recent changes such as those affecting Nomad), operational complexity, security practices, and total cost of ownership before adopting any platform.
-
-
-
-Managed cloud services (ECS, Cloud Run, etc.) abstract away infrastructure but introduce vendor lock-in and ongoing costs. Self-hosted open-source solutions give maximum control but require operational expertise. Choose according to your team size, compliance needs, and scale.
-
-
+- **[hashicorp/nomad](https://github.com/hashicorp/nomad)** [![Stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)  
+  Simple, flexible, and high-performance workload orchestrator. Deploys Docker containers, raw executables, Java JARs, and Windows applications across cloud and bare-metal environments. (BSL 1.1)
 
 ---
 
+### ⚡ Serverless FaaS & Autoscaling Platforms
 
+- **[openfaas/faas](https://github.com/openfaas/faas)** [![Stars](https://img.shields.io/github/stars/openfaas/faas?style=social&color=white)](https://github.com/openfaas/faas/stargazers)  
+  Serverless Functions-as-a-Service framework designed around Docker containers. Deploy any language runtime to Kubernetes or K3s with built-in metrics, event connectors, and automated scaling. (MIT)
 
-**Made with ❤️ for the open-source cloud-native community**  
+- **[kedacore/keda](https://github.com/kedacore/keda)** [![Stars](https://img.shields.io/github/stars/kedacore/keda?style=social&color=white)](https://github.com/kedacore/keda/stargazers)  
+  Kubernetes Event-driven Autoscaling (CNCF Graduated). Drives container scaling from 0 to N instances based on events from Kafka, RabbitMQ, Redis, AWS SQS, Azure Service Bus, and 60+ scalers. (Apache-2.0)
 
-If this list helped you, please ⭐ the repo!
+- **[fission/fission](https://github.com/fission/fission)** [![Stars](https://img.shields.io/github/stars/fission/fission?style=social&color=white)](https://github.com/fission/fission/stargazers)  
+  Fast, developer-friendly serverless framework for Kubernetes. Features instant cold-starts (<100ms) by utilizing pre-warmed container pools, live reloading, and automated ingress. (Apache-2.0)
+
+- **[apache/openwhisk](https://github.com/apache/openwhisk)** [![Stars](https://img.shields.io/github/stars/apache/openwhisk?style=social&color=white)](https://github.com/apache/openwhisk/stargazers)  
+  Distributed, event-driven serverless compute platform. Executes actions in response to HTTP feeds, message brokers, and database mutations with robust concurrency and sequence chaining. (Apache-2.0)
+
+- **[knative/serving](https://github.com/knative/serving)** [![Stars](https://img.shields.io/github/stars/knative/serving?style=social&color=white)](https://github.com/knative/serving/stargazers)  
+  Kubernetes-native request-driven compute runtime. Adds automated scale-to-zero, traffic splitting (canary rollouts), and revision management; acts as the foundation for Google Cloud Run. (Apache-2.0)
+
+- **[nuclio/nuclio](https://github.com/nuclio/nuclio)** [![Stars](https://img.shields.io/github/stars/nuclio/nuclio?style=social&color=white)](https://github.com/nuclio/nuclio/stargazers)  
+  High-performance serverless event and data processing platform designed for real-time streaming, GPU acceleration, and AI/ML inference workloads with minimal CPU overhead. (Apache-2.0)
+
+---
+
+### 🚀 Self-Hosted PaaS & Developer Deployment Platforms
+
+- **[coollabsio/coolify](https://github.com/coollabsio/coolify)** [![Stars](https://img.shields.io/github/stars/coollabsio/coolify?style=social&color=white)](https://github.com/coollabsio/coolify/stargazers)  
+  Self-hostable, all-in-one open-source alternative to Heroku, Netlify, and Vercel. Deploy applications, databases, and Docker services onto your own servers via SSH and Git push. (Apache-2.0)
+
+- **[dokku/dokku](https://github.com/dokku/dokku)** [![Stars](https://img.shields.io/github/stars/dokku/dokku?style=social&color=white)](https://github.com/dokku/dokku/stargazers)  
+  The smallest PaaS implementation you've ever seen. Docker-powered Heroku clone that enables single-command git-push deployments to any Debian/Ubuntu server with SSL automation. (BSD-3-Clause)
+
+- **[caprover/caprover](https://github.com/caprover/caprover)** [![Stars](https://img.shields.io/github/stars/caprover/caprover?style=social&color=white)](https://github.com/caprover/caprover/stargazers)  
+  Extremely easy to use app/database deployment and web server manager. Supports clustering with Docker Swarm, automated Let's Encrypt certificates, and one-click app store templates. (Apache-2.0)
+
+- **[basecamp/kamal](https://github.com/basecamp/kamal)** [![Stars](https://img.shields.io/github/stars/basecamp/kamal?style=social&color=white)](https://github.com/basecamp/kamal/stargazers)  
+  Zero-downtime container deployment tool built by 37signals. Deploys Dockerized web apps directly to bare-metal servers or cloud VMs using Traefik and SSH without heavy cluster agents. (MIT)
+
+---
+
+### 🔄 GitOps, Continuous Delivery & Workflow Orchestration
+
+- **[argoproj/argo-cd](https://github.com/argoproj/argo-cd)** [![Stars](https://img.shields.io/github/stars/argoproj/argo-cd?style=social&color=white)](https://github.com/argoproj/argo-cd/stargazers)  
+  Declarative, GitOps continuous delivery tool for Kubernetes (CNCF Graduated). Synchronizes Kubernetes cluster manifests with Git repositories in real-time with visual status dashboards. (Apache-2.0)
+
+- **[argoproj/argo-workflows](https://github.com/argoproj/argo-workflows)** [![Stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)  
+  Container-native workflow engine for orchestrating parallel batch computing, ETL data pipelines, and machine learning model training on Kubernetes using Directed Acyclic Graphs (DAGs). (Apache-2.0)
+
+- **[fluxcd/flux2](https://github.com/fluxcd/flux2)** [![Stars](https://img.shields.io/github/stars/fluxcd/flux2?style=social&color=white)](https://github.com/fluxcd/flux2/stargazers)  
+  Open and extensible continuous delivery solution for Kubernetes powered by GitOps Toolkit. Automates state reconciliation with Git repositories, Helm charts, and OCI container artifacts. (Apache-2.0)
+
+---
+
+## 💡 Architectural Guidance: How to Choose
+
+- **Need Enterprise Standard & Scalability?** Choose **[Kubernetes](https://github.com/kubernetes/kubernetes)** or **[K3s](https://github.com/k3s-io/k3s)** paired with **[Argo CD](https://github.com/argoproj/argo-cd)** for declarative GitOps continuous deployments.
+- **Need Mixed Legacy Binaries + Containers?** Choose **[Nomad](https://github.com/hashicorp/nomad)** for a single-binary architecture with lower operational complexity than Kubernetes.
+- **Need Serverless Functions / Scale-to-Zero?** Deploy **[Knative](https://github.com/knative/serving)** or **[OpenFaaS](https://github.com/openfaas/faas)** for request-driven compute and automated downscaling.
+- **Need a Self-Hosted Heroku / Vercel Alternative?** Choose **[Coolify](https://github.com/coollabsio/coolify)** for a modern web GUI or **[Dokku](https://github.com/dokku/dokku)** / **[Kamal](https://github.com/basecamp/kamal)** for lightweight SSH/git-push pipelines.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Cloud-Orchestration-Serverless-Deployments&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you for exploring and utilizing this open-source deployment directory! If this curated guide saved you time or aided your architectural decisions, please consider supporting the project:
+
+- 🌟 **Star the repository** to boost discovery for fellow cloud architects and DevOps engineers.
+- 🍴 **Fork the project** and submit additions or improvements via Pull Requests.
+- 📢 **Share with your team** or tech communities on LinkedIn, X/Twitter, and Discord.
+- ☕ **Sponsor & Buy a Coffee:** You can support continuous maintenance and new open-source initiatives via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome and highly appreciated!
+
+1. **Fork the repository** to your personal GitHub account.
+2. Ensure new additions belong in either the **SaaS / Hosted Platforms** table or the **Open-Source GitHub Projects** categories.
+3. Follow the established format:
+   - For Open-Source: Include the full repository link `[org/repo](url)`, the star count social badge `[![Stars](...)](.../stargazers)`, and concise technical bullets detailing license and features.
+4. Verify all hyperlinks, badges, and markdown formatting.
+5. Open a Pull Request detailing your additions.
+
+---
+
+## ⚖️ Disclaimer
+
+This repository is a community-curated directory for architectural research, educational, and informational purposes only. Mentions of commercial SaaS platforms or specific open-source licenses do not constitute formal commercial endorsements. Always review licensing terms, pricing sheets, cloud operational costs, and security requirements prior to rolling infrastructure into production environments.
+
+---
+
+<div align="center">
+
+**Built with ❤️ for DevOps engineers, Cloud Architects, and the Global Open-Source Community.**
+
+</div>
