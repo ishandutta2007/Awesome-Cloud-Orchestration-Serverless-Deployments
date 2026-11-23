@@ -29,6 +29,7 @@ This list prioritizes **open-source GitHub projects and self-hostable tools** wh
 
 
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS / Hosted Platforms](#saas--hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -39,33 +40,26 @@ This list prioritizes **open-source GitHub projects and self-hostable tools** wh
 
 
 
+## Sector Overview & Market Dynamics
+
+The global cloud container orchestration market is valued between $1.4B and $10B+ (growing at ~18–24% CAGR), while the serverless computing sector accounts for $22B to $32B+ (growing at ~15–23% CAGR). The sector exhibits a **highly concentrated core** dominated by hyperscalers (AWS, Microsoft Azure, Google Cloud) that capture the majority of enterprise workload spend, alongside a **moderately fragmented periphery** of specialized PaaS providers, edge runtimes, and developer-centric deployment platforms catering to niche workflows.
+
 ## SaaS / Hosted Platforms
 
+These are popular commercial or fully managed cloud orchestration and serverless platforms (closed-source / hosted), sorted descending by company size (valuation / revenue / market cap):
 
-
-These are popular commercial or fully managed cloud orchestration and serverless platforms (closed-source / hosted):
-
-
-
-- **[AWS ECS](https://aws.amazon.com/ecs/)** (Elastic Container Service) + Fargate — Amazon’s container orchestration service with serverless compute option.
-
-- **[Google Cloud Run](https://cloud.google.com/run)** — Fully managed serverless platform for containers that scales to zero.
-
-- **[Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps)** — Microsoft’s serverless container platform built on Kubernetes technology.
-
-- **[Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)** — Enterprise Kubernetes platform with managed and self-managed offerings (strong commercial focus).
-
-- **[Rancher](https://www.rancher.com/)** (SUSE) — Multi-cluster Kubernetes management platform with commercial support and hosted options.
-
-- **[Fly.io](https://fly.io/)** — Global application platform that runs containers close to users with a developer-friendly experience.
-
-- **[Railway](https://railway.app/)** — Modern PaaS for deploying apps, databases, and services with minimal configuration.
-
-- **[Scaleway Serverless](https://www.scaleway.com/)** — European cloud provider’s serverless containers and functions offerings.
-
-- **Kubernetes Cloud / Managed Kubernetes** (EKS, GKE, AKS, etc.) — Hosted control planes for Kubernetes offered by major cloud providers.
-
-- **HashiCorp Nomad Cloud / enterprise offerings** — Managed or supported versions of Nomad for production workloads.
+| Platform | Provider / Parent | Company Size (Valuation / Revenue) | Starting Tier Pricing | Free Tier / Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **[Azure Container Apps](https://azure.microsoft.com/en-us/products/container-apps)** | Microsoft | ~$3.8T Market Cap (~$245B+ ARR) | Pay-as-you-go from $0.000024/vCPU-s ($0.0864/vCPU-hr) active compute + $0.000003/GiB-s memory | **Free Forever:** 180,000 vCPU-seconds (~50 vCPU-hrs), 360,000 GiB-seconds (~100 GiB-hrs), and 2M HTTP requests per month. | Serverless container platform built on Kubernetes & KEDA, scaling to zero without managing underlying infrastructure. |
+| **[Google Cloud Run](https://cloud.google.com/run)** | Google (Alphabet) | ~$3.4T Market Cap (~$350B+ ARR) | Pay-as-you-go from $0.000024/vCPU-s ($0.0864/vCPU-hr) request-based compute + $0.0000025/GiB-s memory | **Free Forever:** 180,000 vCPU-seconds (~50 vCPU-hrs), 360,000 GiB-seconds, 2M requests, and 1 GB egress/mo. | Fully managed serverless container runtime that executes containers directly via HTTP requests with instant scale-to-zero. |
+| **[AWS ECS](https://aws.amazon.com/ecs/) + Fargate** | Amazon (AWS) | ~$2.8T Market Cap (~$105B+ AWS ARR) | Pay-as-you-go from $0.04048 per vCPU-hour + $0.004445 per GB-hour (US East Linux/x86) | **No Free vCPU Tier:** Compute billed from first second; includes 20 GB free ephemeral storage per task/pod (EC2 Free Tier offers 750 hrs/mo on t2/t3.micro). | Amazon's fully managed container orchestration service offering serverless container execution via AWS Fargate. |
+| **Managed Kubernetes (EKS / GKE / AKS)** | AWS / Google / Microsoft | Hyperscalers ($2.8T – $3.8T Market Cap) | Control plane from $0.00/hr (AKS Free Tier) to $0.10/cluster-hour (~$73/mo for EKS/GKE) + underlying worker node compute | **Varies by Provider:** AKS has permanent free control plane ($0 SLA); GKE gives $74.40/mo credit (covers 1 Zonal/Autopilot cluster); EKS has no free tier (12-month AWS Free Tier only covers EC2 nodes). | Managed enterprise Kubernetes control planes automating cluster provisioning, upgrades, and high availability. |
+| **[Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)** | IBM (Red Hat) | $34B Acquisition ($190B+ IBM Market Cap, Red Hat ARR ~$4B+) | Self-managed subscriptions start at core-pair licensing (~$1,000–$2,000+/core-pair/yr); ROSA/ARO managed cloud starts at hourly compute add-on (~$0.07–$0.17/vCPU-hr) | **60-Day Free Trial:** Full product access on own infrastructure; or free Developer Sandbox (shared hosted environment renewable in 30-day blocks with 12-hr pod timeout). | Enterprise Kubernetes application platform with developer tooling, security, and multicloud deployment capabilities. |
+| **[HashiCorp Nomad Enterprise / Cloud (HCP)](https://www.hashicorp.com/products/nomad)** | IBM (HashiCorp) | $6.4B Acquisition ($580M+ ARR) | Self-hosted Community Edition is free (BSL); HCP Nomad managed clusters start at hourly development tiers (~$0.05–$0.15/cluster-hr) | **Free Forever (Self-Hosted):** Nomad binary free to self-manage; HCP Cloud provides a 30-day trial with $500 free credits across HashiCorp Cloud Platform services (no permanent free managed cluster). | Workload orchestrator deploying containers, non-containerized legacy binaries, and microservices across hybrid infrastructures. |
+| **[Rancher Prime](https://www.rancher.com/)** | SUSE (EQT) | ~$2.9B Take-Private Valuation (~$778M ARR) | Open-source core is free; SUSE Rancher Prime subscriptions start around €2,113/yr per 2-core/4-vCPU block; AWS Marketplace edition starts at ~$168/mo for 24 vCPUs | **Free Forever (Community Edition):** Unrestricted full open-source cluster management; Rancher Prime offers a 30-day free trial on AWS Marketplace / SUSE customer portal. | Complete multi-cluster management stack for running containers across on-prem bare-metal, edge devices, and public clouds. |
+| **[Scaleway Serverless](https://www.scaleway.com/)** | Scaleway (Iliad Group) | €11B+ Iliad Market Cap (Scaleway ARR ~€150M) | Serverless Containers start at €0.00001/vCPU-s (€0.036/vCPU-hr) + €0.000002/GB-s; Functions at €0.000005/GB-s + €0.15/1M requests | **Free Forever:** 200,000 vCPU-seconds and 400,000 GB-seconds free monthly for Containers; 400,000 GB-seconds and 1,000,000 requests free monthly for Functions. | European sovereign cloud platform providing managed serverless container execution and serverless micro-functions. |
+| **[Railway](https://railway.app/)** | Railway | ~$500M–$1B Valuation ($124M funding, ~2M users) | Hobby plan starting at **$5.00/month** (includes $5 of resource credits, then $20/vCPU-mo & $10/GB RAM-mo) | **Free Forever:** $1.00/mo recurring resource credit, 1 project with up to 3 services (up to 0.5 GB RAM, 1 vCPU, auto-sleep after idle) plus a 30-day initial trial with $5 credit. | Developer-centric PaaS providing instant git-based deployments, automated container builds, and database provisioning. |
+| **[Fly.io](https://fly.io/)** | Fly.io | ~$470M Valuation ($136M funding, ~$12M ARR) | Pay-as-you-go starting at ~$2.19/month for continuous `shared-cpu-1x` (256MB RAM) micro-machine; Hobby subscription at $5.00/month | **Pay-As-You-Go / Trial:** No permanent free VM plan for new accounts ($1 trial credit / pay-per-second); includes free perpetual 10 GB volume snapshots, 10 SSL certificates, and shared IPv4/IPv6. | Global application delivery platform running micro-VM containers directly on bare metal close to users. |
 
 
 
